@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circulo</title>
+    
+    <script>
+        var circulo = {
+            a: 2,
+            b: 3,
+            raio: 5,
+            x1: 0,
+            y1: 0,
+
+            calcArea: function () {
+                return (Math.PI * (this.raio ** 2));
+            },
+
+            calcCircunferencia: function () {
+                let circunferencia = (2 * (Math.PI) * this.raio).toFixed(2);
+                return circunferencia;
+            },
+            
+            calcDistancia: function() {
+                distancia = ((this.x1 - this.a) ** 2 + (this.y1 - this.b) ** 2 ** 0.5).toFixed(2);
+                return distancia;
+            },
+
+            calcPosicao: function(distancia){
+                posicao =  distancia == this.raio ? "esta na circunferencia" 
+                          :distancia < this.raio ? "esta dentro da circunferencia" 
+                          :"esta fora da circunferencia";
+                return posicao;
+            
+            }
+        
+        };
+        function calcCirculos() {
+            circulo.x1 = parseFloat(prompt("Informe o x1:"));
+            circulo.y1 = parseFloat(prompt("Informe o y1:"));    
+           document.getElementById("resultado").innerHTML = `A area: ${circulo.calcArea()} <br><br> A Circunferencia: ${circulo.calcCircunferencia()} 
+                                                      <br><br> O ponto ${circulo.x1} e ${circulo.y1}: ${circulo.calcPosicao(circulo.calcDistancia())}`;
+        }
+    </script>
+</head>
+
+<body onload="calcCirculos()">
+    <p id="resultado"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>
