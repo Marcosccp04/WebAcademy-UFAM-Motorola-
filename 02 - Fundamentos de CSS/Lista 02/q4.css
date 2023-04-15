@@ -1,0 +1,33 @@
+.button7 {
+  padding: 15px 40px;
+  margin: 0px 5px 5px 0px;
+  border-radius: 8px;
+  font-family: "Robot", sans-serif;
+  font-weight: 400;
+  box-shadow: inset 0 -10px 20px -1px rgba(0, 0, 0, 0.17);
+  color: #ffffff;
+}
+a.button7 {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none; /* permite que as palavras não fique sublinhadas */
+  background-color: #3369ff;
+  /* complete o CSS */
+}
+
+.registro{
+    color: #000000;
+}
+
+.login{
+    background-color: #2979FF;
+}
+
+.mLetter{
+    font-size: 32px;
+    font-family: 'Comic Sans MS';
+    margin-right: 0.3em;
+    vertical-align:middle; 
+    padding-right:10px;
+    border-right: solid 4px rgba(255, 255, 255, 0.5);
+}

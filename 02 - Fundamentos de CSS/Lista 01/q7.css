@@ -1,0 +1,49 @@
+.nomeArtista{
+    font-size: 14pt;
+    font-family: Arial;
+    font-weight: bold;
+    color: moccasin;
+}
+
+.tituloMusica{
+    font-size: 14pt;
+    font-weight: normal; /*não é necessário mas escrevi para acostumar com a propriedade*/
+    color: khaki;
+}
+
+.album{
+    font-size: 12pt;
+    font-family: Arial;
+    font-weight: normal;
+    color: khaki;
+}
+
+.ano{
+    font-size: 12pt;
+    font-family: Arial;
+    font-weight: bold;
+    color: ivory
+}
+
+body{
+    background-color: chocolate;
+}
+
+.estrofe {
+    font-size: 14pt;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    color: gold;
+    margin-left: 2cm;
+    margin-right: 2cm;
+  }
+
+  .refrao {
+    font-size: 14pt;
+    font-family: "Trebuchet MS";
+    font-weight: bold;
+    font-style: italic;
+    color: gold;
+    margin-left: 4cm;
+    margin-right: 4cm;
+  }

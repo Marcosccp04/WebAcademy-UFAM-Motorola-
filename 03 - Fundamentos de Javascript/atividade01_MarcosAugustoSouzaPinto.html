@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Calculadora web</title>
+    <style>
+      .cabecalho,
+      .valores {
+        display: flex;
+      }
+      .cabecalho p {
+        margin-right: 210px;
+      }
+      .valores p{
+        margin: 10px;
+      }
+      .botoes{
+        padding-top: 20px;
+      }
+    </style>
+    <script>
+      function operacao(op) {
+        classeResultado = document.querySelector(".valores .p1");
+        classeOperacao = document.querySelector(".valores .p0");
+        var x = parseInt(document.getElementById("x").value);
+        var y = parseInt(document.getElementById("y").value);
+        
+        if(op == "+")total = x+y;
+        if(op == "-")total = x-y;
+        if(op == "*")total = x*y;
+        if(op == "/")total = x/y;
+       
+        classeOperacao.innerHTML = op;
+        classeResultado.innerHTML = "O resutado eh " +total;
+    }
+    </script>
+  </head>
+  <body>
+    <div class="cabecalho">
+      <p>Valor 1:</p>
+      <p>Valor 2:</p>
+    </div>
+
+    <div class="valores">
+      <input type="number" id="x" value="" >
+      <p class="p0">operacao</p>
+      <input type="number" id="y" value="">
+      <p class="p1">resultado</p>
+    </div>
+    <div class="botoes">
+    <p> Selecione a operacao que deseja realizar:</p>
+      <button id="sum" onclick="operacao('+')">+</button>
+      <button id="sub" onclick="operacao('-')">-</button>
+      <button id="mult" onclick="operacao('*')">*</button>
+      <button id="div" onclick="operacao('/')">/</button>
+    </div>
+  </body>
+</html>

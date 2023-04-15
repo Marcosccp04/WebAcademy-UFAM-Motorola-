@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <title>Formulário</title>
+        <meta name="description" content="Atividade Final de Fundamentos em HTML">
+        <meta name="author" content="Marcos Augusto de Souza Pinto">
+      
+      <style>
+            main{
+                background-color: aqua;
+                font-size: 30px;
+                font-family: monospace;
+            }
+            a{
+                font-size: 40px;
+                font-family: monospace;
+            }
+        </style>
+</head>
+<body>
+    <main>
+    <form action="action_page.php" method="post">
+           <fieldset>
+                <legend>Entre em contato:</legend>
+                Primeiro nome:
+                <br>
+                <input type="text" name="primeiroNome">
+                <br>
+                Sobrenome:
+                <br> 
+                <input type="text" name="sobrenome">
+                <br>
+                Seu email de contato:
+                <br>
+                <input type="email" name="email" id="emailId">
+                <br>
+                Mensagem:
+                <br>
+    			<textarea name="mensagem" id="mensagemId" cols="100" rows="30"></textarea><br>
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+     </form>
+</main>
+<a href="atividadeFinal_MarcosAugustoSouzaPinto.html" rel="noopener noreferrer"
+style="color:red;"><em>Retornar para a página anterior!</em></a>
+</body>
+</html>
